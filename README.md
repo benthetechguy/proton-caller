@@ -75,24 +75,21 @@ More about these options can be found in Proton's manual.
 [proton-caller](https://aur.archlinux.org/packages/proton-caller) is available as a [package in the AUR](https://aur.archlinux.org/packages/proton-caller).
 
 ### Debian-based Distributions:
-#### Based on Debian 12+ or Ubuntu 22.04+:
-`sudo apt install proton-caller`
+#### Debian (12+) and Ubuntu (22.04+) based:
+```
+sudo apt install proton-caller
+```
+Due to Debian and Ubuntu's practice of not updating the software in their repos between major releases, the proton-caller version found in Debian and Ubuntu's official repos may be outdated. If you are on Ubuntu and want the newest proton-caller available, you may want to use the PPA below.
 
-#### Based on Ubuntu 20.04-21.10:
+#### Ubuntu (20.04+) based:
 ```
 sudo add-apt-repository ppa:benthetechguy/proton-caller
 sudo apt install proton-caller
 ```
+This repo provides the latest version of proton-caller for every release of Ubuntu until it reaches [EOL](https://wiki.ubuntu.com/Releases).
 
 #### Other:
 A `.deb` file is available for download at the [releases](https://github.com/caverym/proton-caller/releases) page.
-
-### RPM-based Distributions:
-A `.rpm` file is available for download at the [releases](https://github.com/caverym/proton-caller/releases) page. There is also a [Copr](https://developer.fedoraproject.org/deployment/copr/about.html) repository available for Fedora 34+ users:
-```
-sudo dnf copr enable benthetechguy/proton-caller
-sudo dnf install proton-caller
-```
 
 ### Other Linux:
 An x86_64 Linux binary is available for download at the [releases](https://github.com/caverym/proton-caller/releases) page.
